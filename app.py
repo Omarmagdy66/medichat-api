@@ -2,7 +2,7 @@ from flask import Flask, request, jsonify
 from flask_cors import CORS
 import os
 from langchain_google_genai import GoogleGenerativeAIEmbeddings, ChatGoogleGenerativeAI
-from langchain.vectorstores import Chroma
+from langchain_community.vectorstores import Chroma  # ← التغيير هنا
 from langchain.chains import RetrievalQA
 from langchain.prompts import PromptTemplate
 
